@@ -1,0 +1,64 @@
+.about-me {
+  width: 552px; /* Размер как у карточек десертов */
+  height: 608px; /* Размер как у карточек десертов */
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #8a2be2, #da70d6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.info {
+  width: 100%;
+}
+
+.contacts {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+  .about-me {
+    width: 90%;
+    height: auto; /* Автоматическая высота на мобильных */
+    padding: 1.5rem;
+  }
+  
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .avatar {
+    margin-bottom: 1rem;
+  }
+}
